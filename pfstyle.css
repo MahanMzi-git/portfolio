@@ -163,3 +163,31 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   text-align:center;
   opacity:.55;
 }
+
+.stats-section{
+  background: #05070c;
+  padding: 36px 56px 56px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr) 1.6fr;
+  gap: 22px;
+}
+.stat-card, .what-card{
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 28px 22px;
+}
+.stat-card{ text-align:left; }
+.stat-icon{ color: var(--blue-bright); margin-bottom: 18px; font-size: 22px; }
+.stat-number{ font-size: 34px; font-weight: 800; margin-bottom: 8px; }
+.stat-label{ color: var(--muted); font-size: 14px; line-height: 1.4; }
+.what-card h3{ font-size: 22px; margin-bottom: 14px; }
+.what-card p{ color: var(--muted); font-size: 14.5px; line-height: 1.7; margin-bottom: 18px; }
+.what-card a{ color: var(--blue-bright); text-decoration:none; font-size: 14.5px; font-weight:600; }
+
+@media (max-width: 1000px){
+  .stats-section{ grid-template-columns: repeat(2,1fr); }
+}
+@media (max-width: 560px){
+  .stats-section{ grid-template-columns: 1fr 1fr; padding: 28px 20px 40px; }
+}
