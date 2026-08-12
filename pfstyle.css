@@ -393,3 +393,53 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   object-fit: cover;
   border-radius: 24px;
 }
+
+.about-section{
+  padding: 20px 56px 60px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+  align-items:start;
+}
+
+.about-text .about-lead{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.about-text p{
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+.about-text strong{ color: var(--blue-bright); font-weight: 600; }
+
+.about-skills{
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 16px;
+  padding: 26px 24px;
+}
+.about-skills h3{ font-size: 16px; margin-bottom: 18px; color: var(--muted); font-weight:600; }
+
+.skills-grid{ display:flex; flex-wrap:wrap; gap:10px; }
+.skill-tag{
+  background: rgba(47,123,255,0.1);
+  border: 1px solid rgba(47,123,255,0.25);
+  color: var(--blue-bright);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+}
+
+@media (max-width: 1000px){
+  .about-section{ padding: 20px 20px 40px; }
+  .about-grid{ grid-template-columns: 1fr; }
+}
