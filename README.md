@@ -2,7 +2,7 @@
 
 A dark, glassy personal portfolio website built from scratch with vanilla HTML and CSS. Showcases my projects, education, and background as a software engineering student.
 
-🔗 **Live Demo:** _(coming soon — will be added once GitHub Pages is enabled)_
+🔗 **Live Demo:** [mahanmzi-git.github.io/portfolio](https://mahanmzi-git.github.io/portfolio/)
 
 ## ✨ Features
 
