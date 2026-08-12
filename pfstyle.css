@@ -92,6 +92,7 @@ h2.role{ font-size: clamp(24px, 3vw, 32px); font-weight: 700; color: var(--blue-
 p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480px; margin-bottom: 34px; }
 
 .cta-row{ display:flex; gap: 16px; margin-bottom: 34px; flex-wrap: wrap; }
+
 .btn-primary{
   display:flex; align-items:center; gap:10px;
   background: linear-gradient(180deg, #2f7bff, #1c5ce0);
@@ -106,6 +107,13 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   padding: 15px 26px; border-radius: 10px; font-size: 15px; font-weight:600; cursor:pointer;
   transition: background .2s ease;
 }
+
+.btn-primary,
+.btn-secondary{
+  text-decoration: none;
+}
+
+
 .btn-secondary:hover{ background: rgba(47,123,255,0.08); }
 
 .social-row{ display:flex; gap:14px; }
