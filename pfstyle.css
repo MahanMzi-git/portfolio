@@ -88,9 +88,9 @@ nav{
 }
 
 .eyebrow{ color: var(--blue-bright); font-size: 18px; margin-bottom: 6px; }
-h1.name{ font-size: clamp(38px, 5vw, 58px); font-weight: 800; line-height: 1.05; margin-bottom: 10px; letter-spacing: -1px; }
-h2.role{ font-size: clamp(24px, 3vw, 32px); font-weight: 700; color: var(--blue-bright); margin-bottom: 22px; }
-p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480px; margin-bottom: 34px; }
+h1.name{ font-size: clamp(28px, 8vw, 58px); font-weight: 800; line-height: 1.05; margin-bottom: 10px; letter-spacing: -1px; }
+h2.role{ font-size: clamp(18px, 5vw, 32px); font-weight: 700; color: var(--blue-bright); margin-bottom: 22px; }
+p.intro{ color: var(--muted); font-size: clamp(14px, 3.5vw, 16px); line-height: 1.7; max-width: 480px; margin-bottom: 34px; }
 
 .cta-row{ display:flex; gap: 16px; margin-bottom: 34px; flex-wrap: wrap; }
 
@@ -132,8 +132,10 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   min-height: 460px;
 }
 .portrait{
-  position:relative;
-  width: 380px; height: 460px; border-radius: 24px;
+    position:relative;
+  width: min(380px, 80vw);
+  height: min(460px, 65vw);
+  border-radius: 24px;
   background:
     radial-gradient(circle at 32% 30%, rgba(60,90,140,0.5), transparent 55%),
     linear-gradient(160deg, #10151f, #05070c 70%);
@@ -189,7 +191,43 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   .stats-section{ grid-template-columns: repeat(2,1fr); }
 }
 @media (max-width: 560px){
-  .stats-section{ grid-template-columns: 1fr 1fr; padding: 28px 20px 40px; }
+  nav{
+    margin-bottom: 30px;
+    gap: 14px;
+  }
+  .nav-links{
+    flex-wrap: wrap;
+    gap: 14px 20px;
+    justify-content: center;
+    order: 3;
+    width: 100%;
+  }
+  .logo{
+    order: 1;
+  }
+  .cv-btn{
+    order: 2;
+  }
+  .hero{
+    padding: 24px 20px 40px;
+  }
+  .hero-grid{
+    grid-template-columns: 1fr;
+  }
+  .portrait-wrap{
+    min-height: unset;
+  }
+  .portrait{
+    width: 260px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  h1.name{
+    font-size: 32px;
+  }
+  h2.role{
+    font-size: 20px;
+  }
 }
 
 .projects-section{
