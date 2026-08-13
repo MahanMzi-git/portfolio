@@ -8,6 +8,7 @@
   --muted:#93a1b8;
 }
 *{box-sizing:border-box; margin:0; padding:0;}
+html{ scroll-behavior: smooth; }
 html,body{background:#000; color:var(--text); font-family:'Segoe UI', system-ui, -apple-system, sans-serif;}
 
 body{
@@ -524,4 +525,32 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
 .btn-secondary,
 .cv-btn{
   text-decoration: none;
+}
+
+#scrollTopBtn{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #2f7bff, #1c5ce0);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px -8px rgba(47,123,255,0.7);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity .3s ease, transform .3s ease, visibility .3s ease;
+  z-index: 999;
+}
+#scrollTopBtn.show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#scrollTopBtn:hover{
+  transform: translateY(-3px);
 }
