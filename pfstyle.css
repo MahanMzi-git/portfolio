@@ -519,3 +519,9 @@ p.intro{ color: var(--muted); font-size: 16px; line-height: 1.7; max-width: 480p
   height: 18px;
   fill: currentColor;
 }
+
+.btn-primary,
+.btn-secondary,
+.cv-btn{
+  text-decoration: none;
+}
